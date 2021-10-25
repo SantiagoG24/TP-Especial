@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/icon.png" sizes="16x16">
+</head>
+
+<body>
+
+    <header>
+        <h1>La pastelería de TUDAI</h1>
+    </header>
+
+    <nav class="nav">
+        <div class="btn-menu">
+            <a id="btn-menu">MENÚ</a>
+        </div>
+        <ul class="barra-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="compras.html">Compras</a></li>
+        </ul>
+    </nav>
+
+    <section class="formulario">
+        <form id="formulario">
+            <div class="form-compras">
+                <h2>Productos</h2>
+                <div>
+                    <p class="opciones">Chocotorta</p>
+                    <select class="cantidad-producto">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="opciones">Tiramisu</p>
+                    <select class="cantidad-producto">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="opciones">Lemonpie</p>
+                    <select class="cantidad-producto">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="opciones">Brownie</p>
+                    <select class="cantidad-producto">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="opciones">Frutos rojos</p>
+                    <select class="cantidad-producto">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="opciones">Torta</p>
+                    <select class="cantidad-producto">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Precio</p>
+                    <p id="precio">$0</p>
+                </div>
+            </div>
+
+            <div class="form-compras">
+                <h2>Extras</h2>
+                <textarea name="Extras" id="" rows="5"
+                    placeholder="Escriba aqui las especificaciones particulares de los extras que quiera agregar a sus productos"></textarea>
+            </div>
+            <div class="form-compras">
+                <h2>Fecha</h2>
+                <div class="fecha">
+                    <input type="date" name="" id="">
+                    <input type="time" name="" id="">
+                </div>
+                <p class="aclaraciones">Pedir con 24hs de anticipación</p>
+            </div>
+            <div class="form-compras">
+                <h2>Datos del Comprador</h2>
+                <p>Nombre</p>
+                <input type="text" name="nombre" placeholder="*">
+                <p>Dirección</p>
+                <input type="text" name="direccion" placeholder="*">
+                <p>Escriba el resultado de la siguiente operación</p>
+                <img class="img-captcha" id="img-captcha" src="" alt="">
+                <p class="aclaraciones" id="valid-captcha"></p>
+                <input type="text" id="captcha-text" placeholder="*">
+                <input type="submit" name="Realizar Pedido" value="Realizar Pedido" id="submit">
+                <p class="aclaraciones" id="pedido-realizado"></p>
+                <p class="aclaraciones"> * espacios obligatorios</p>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>La pastelería de TUDAI</p>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+</body>
+
+</html>
