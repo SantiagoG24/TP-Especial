@@ -5,8 +5,8 @@ let productos = [
         source : "brownie.png",
         producto : "Brownie",
         descripcion : "Torta Brownie con nuez, dulce de leche natural y merengue italiano, decorado con hilos de chocolate",
-        precio : "$2499",
-        precioOferta : "$1999",
+        precio : "",
+        precioOferta : "$2499",
     },
     {
         source : "tiramisu.png",
@@ -26,7 +26,7 @@ let productos = [
         source : "chocotorta.png",
         producto : "Chocotorta",
         descripcion : "Galletitas de chocolate remojadas en leche, relleno de dulce de leche y queso crema, copos de crema de chocolate",
-        precio : "",
+        precio : "$2600",
         precioOferta : "$2250",
     },
     {
