@@ -142,6 +142,9 @@ td p{
     margin: 0px;
     padding: 10px;
 }
+button{
+    background-color: pink;
+}
 .form-productos div{
     display: flex;
     justify-content: space-between;
