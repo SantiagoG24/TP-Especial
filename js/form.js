@@ -25,7 +25,7 @@ let productos = [
     {
         source : "chocotorta.png",
         producto : "Chocotorta",
-        descripcion : "Galletitas de chocolate, relleno de dulce de leche y queso crema, copos de crema de chocolate",
+        descripcion : "Galletitas de chocolate remojadas en leche, relleno de dulce de leche y queso crema, copos de crema de chocolate",
         precio : "",
         precioOferta : "$2250",
     },
@@ -39,7 +39,7 @@ let productos = [
     {
         source : "torta.png",
         producto : "Torta",
-        descripcion : "Torta rellena de dulce de leche, con cobertura a eleccióno",
+        descripcion : "Torta rellena de dulce de leche y crema, con cobertura a elección",
         precio : "",
         precioOferta : "$1250",
     }
