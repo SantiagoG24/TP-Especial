@@ -31,8 +31,11 @@ a:hover{
 img{
     margin: 10px;
 }
-td, .form-compras, .extras-container, .form-productos{
+.form-compras, .extras-container, .form-productos{
     background-color: rgba(207, 163, 163, 0.637);
+}
+td{
+background-color: #bad5cc;
 }
 td, th, .form-compras, .extras-container, .form-productos{
     border: solid 1px black;
