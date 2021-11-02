@@ -231,6 +231,12 @@ footer{
 .panel{
     max-height: 0;
 }
+.form-productos div.mostrar-precio-original{
+    display:none;
+}
+.rojo{
+    background-color: red;
+}
 
 /*
     color: #29252a;
