@@ -241,17 +241,6 @@ footer{
     background-color: red;
 }
 
-/*
-    color: #29252a;
-    color: #e55388;
-    color: #e57d88;
-    color: #e59f88;
-    color: #e5d988;
-    color: #bad5cc;
-    color: #6dd5cc;
-    color: #5ac5cc;
-*/
-
 @media only screen and (min-width:650px){    
     .barra-nav, .contacto-lista, .barra-nav.show{
         flex-direction: row;

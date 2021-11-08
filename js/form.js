@@ -1,54 +1,55 @@
 "use strict"
 
+document.getElementById("btn-agregar").addEventListener("click", agregarItem);
+document.getElementById("btn-agregar-tres").addEventListener("click", agregarTres);
+document.getElementById("btn-vaciar-tabla").addEventListener("click", vaciarTabla);
+
 let productos = [
     {
-        source : "brownie.png",
-        producto : "Brownie",
-        descripcion : "Torta Brownie con nuez, dulce de leche natural y merengue italiano, decorado con hilos de chocolate",
-        precio : "",
-        precioOferta : "$2499",
+        source: "brownie.png",
+        producto: "Brownie",
+        descripcion: "Torta Brownie con nuez, dulce de leche natural y merengue italiano, decorado con hilos de chocolate",
+        precio: "",
+        precioOferta: "$2499",
     },
     {
-        source : "tiramisu.png",
-        producto : "Tiramisu",
-        descripcion : "Base de Vainillas con café, crema de café , crema chantilly y cubierta de cacao",
-        precio : "$1750",
-        precioOferta : "$1499",
+        source: "tiramisu.png",
+        producto: "Tiramisu",
+        descripcion: "Base de Vainillas con café, crema de café , crema chantilly y cubierta de cacao",
+        precio: "$1750",
+        precioOferta: "$1499",
     },
     {
-        source : "lemonpie.png",
-        producto : "Lemonpie",
-        descripcion : "Tarta dulce, crema de limón y merengue italiano",
-        precio : "$1999",
-        precioOferta : "$1199",
+        source: "lemonpie.png",
+        producto: "Lemonpie",
+        descripcion: "Tarta dulce, crema de limón y merengue italiano",
+        precio: "$1999",
+        precioOferta: "$1199",
     },
     {
-        source : "chocotorta.png",
-        producto : "Chocotorta",
-        descripcion : "Galletitas de chocolate remojadas en leche, relleno de dulce de leche y queso crema, copos de crema de chocolate",
-        precio : "$2600",
-        precioOferta : "$2250",
+        source: "chocotorta.png",
+        producto: "Chocotorta",
+        descripcion: "Galletitas de chocolate remojadas en leche, relleno de dulce de leche y queso crema, copos de crema de chocolate",
+        precio: "$2600",
+        precioOferta: "$2250",
     },
     {
-        source : "frutosrojos.png",
-        producto : "Frutos Rojos",
-        descripcion : "Tarta dulce, crema chantilly, frutos rojos y gelatina",
-        precio : "",
-        precioOferta : "$1750",
+        source: "frutosrojos.png",
+        producto: "Frutos Rojos",
+        descripcion: "Tarta dulce, crema chantilly, frutos rojos y gelatina",
+        precio: "",
+        precioOferta: "$1750",
     },
     {
-        source : "torta.png",
-        producto : "Torta",
-        descripcion : "Torta rellena de dulce de leche y crema, con cobertura a elección",
-        precio : "",
-        precioOferta : "$1250",
+        source: "torta.png",
+        producto: "Torta",
+        descripcion: "Torta rellena de dulce de leche y crema, con cobertura a elección",
+        precio: "",
+        precioOferta: "$1250",
     }
 ];
 
-mostrarEncabezado();
-mostrarTabla();
-
-function mostrarEncabezado(){
+function mostrarEncabezado() {
     let tabla = document.getElementById("tabla");
     let tHead = document.createElement("thead");
     let tr = document.createElement("tr");
@@ -73,11 +74,7 @@ function mostrarEncabezado(){
 
 }
 
-document.getElementById("btn-agregar").addEventListener("click", agregarItem);
-document.getElementById("btn-agregar-tres").addEventListener("click", agregarTres);
-document.getElementById("btn-vaciar-tabla").addEventListener("click", vaciarTabla);
-
-function agregarItem(event){
+function agregarItem(event) {
     event.preventDefault();
     console.log("click en agregar");
 
@@ -88,11 +85,11 @@ function agregarItem(event){
     let precioOferta = document.getElementById("precio-actual-input");
 
     let elementoTabla = {
-        source : source.value,
-        producto : producto.value,
-        descripcion : descripcion.value,
-        precio : precio.value,
-        precioOferta : precioOferta.value,
+        source: source.value,
+        producto: producto.value,
+        descripcion: descripcion.value,
+        precio: precio.value,
+        precioOferta: precioOferta.value,
     }
 
     productos.push(elementoTabla);
@@ -102,40 +99,40 @@ function agregarItem(event){
     mostrarTabla();
 }
 
-function agregarTres(event){
+function agregarTres(event) {
     event.preventDefault();
     console.log("aguante boca");
     let productosOfertas = [
         {
-            source : "chocotorta.png",
-            producto : "Chocotorta",
-            descripcion : "Galletitas de chocolate, relleno de dulce de leche y queso crema, copos de crema de chocolate",
-            precio : "$2499",
-            precioOferta : "$1999",
+            source: "chocotorta.png",
+            producto: "Chocotorta",
+            descripcion: "Galletitas de chocolate, relleno de dulce de leche y queso crema, copos de crema de chocolate",
+            precio: "$2499",
+            precioOferta: "$1999",
         },
         {
-            source : "tiramisu.png",
-            producto : "Tiramisu",
-            descripcion : "Base de Vainillas con café, crema de café , crema chantilly y cubierta de cacao",
-            precio : "$1750",
-            precioOferta : "$1499",
+            source: "tiramisu.png",
+            producto: "Tiramisu",
+            descripcion: "Base de Vainillas con café, crema de café , crema chantilly y cubierta de cacao",
+            precio: "$1750",
+            precioOferta: "$1499",
         },
         {
-            source : "lemonpie.png",
-            producto : "Lemonpie",
-            descripcion : "Tarta dulce, crema de limón y merengue italiano",
-            precio : "$1999",
-            precioOferta : "$1199",
+            source: "lemonpie.png",
+            producto: "Lemonpie",
+            descripcion: "Tarta dulce, crema de limón y merengue italiano",
+            precio: "$1999",
+            precioOferta: "$1199",
         }
     ]
     for (const producto of productosOfertas) {
-        productos.push(producto);  
+        productos.push(producto);
     }
 
     mostrarTabla();
 }
 
-function vaciarTabla(event){
+function vaciarTabla(event) {
     event.preventDefault();
     productos = [];
     console.table(productos);
@@ -143,7 +140,7 @@ function vaciarTabla(event){
     mostrarTabla();
 }
 
-function mostrarTabla(){
+function mostrarTabla() {
     document.querySelector(".show").innerHTML = ""
     for (const i of productos) {
         document.querySelector(".show").innerHTML += `<tr>
@@ -157,3 +154,6 @@ function mostrarTabla(){
                                                     </tr>`
     }
 }
+
+mostrarEncabezado();
+mostrarTabla();

@@ -1,10 +1,9 @@
 "use strict";
 
-let btnMenu = document.querySelector(".btn-menu");
-
 btnMenu.addEventListener("click", toggleMenu);
 
-function toggleMenu(){
-    // console.log("menu clickeado");
+let btnMenu = document.querySelector(".btn-menu");
+
+function toggleMenu() {
     document.querySelector(".barra-nav").classList.toggle("show")
 }
