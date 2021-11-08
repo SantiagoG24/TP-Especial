@@ -2,8 +2,8 @@
 
 document.getElementById("formulario").addEventListener("submit", captcha);
 let imgValue = 0;
-var arrSrc = ["images/captcha01.png", "images/captcha02.png", "images/captcha03.png", "images/captcha04.png",
-"images/captcha05.png", "images/captcha06.png", "images/captcha07.png"];
+var arrSrc = ["images/captcha-01.png", "images/captcha-02.png", "images/captcha-03.png", "images/captcha-04.png",
+"images/captcha-05.png", "images/captcha-06.png", "images/captcha-07.png"];
 var arrValue = ["w2yp7","253dc","bny23","dn5df","gnc3n","n4wwn","pgm2e"];
 
 function cambiarImagen() {
